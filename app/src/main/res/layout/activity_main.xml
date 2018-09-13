@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/cd"
+            android:layout_width="match_parent"
+            android:layout_heigth="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ci"
+                android:textsize="18px"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_weight="wrap_content"
+                android:id="@+id/txt_city"
+                android:inputType="textPersonName"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/cd2"
+            android:layout_width="match_parent"
+            android:layout_heigth="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:textsize="18px"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_weight="wrap_content"
+                android:id="@+id/txt_city2"
+                android:inputType="textPersonName"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_clear"
+            android:text="@string/Clear"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_search"
+                android:text="@string/Search"/>
+        </TableRow>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</ListView>
+
+    </TableLayout>
+
+</LinearLayout>
